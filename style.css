@@ -1,0 +1,97 @@
+body {
+  font-family: 'Quicksand', Arial, sans-serif;
+  background: #fff5e6;
+  color: #333;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-family: 'Fredoka', 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e65100;
+}
+
+.choripan {
+  margin: 20px 0;
+  animation: flotar 2s infinite ease-in-out;
+}
+
+@keyframes flotar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.respuesta {
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 20px;
+  background: #fff0cc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.oculto {
+  display: none;
+}
+
+#oraculo {
+  max-width: 300px;
+  margin: 1em auto;
+}
+
+#oraculo-card {
+  padding: 1em;
+  margin-top: 2em;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#oraculo-card img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.acciones {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}

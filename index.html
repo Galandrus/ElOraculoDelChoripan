@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oráculo del Choripán</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Quicksand:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Oráculo del Choripán</h1>
+      <p class="sub">Haceme una pregunta y revelaré tu destino.</p>
+
+      <input
+        type="text"
+        id="pregunta"
+        placeholder="¿Debería cambiar de trabajo?"
+      />
+
+      <button onclick="consultar()">Consultar al Choripán 🔮</button>
+      <br />
+      <div id="oraculo-card">
+        <img
+          id="icono-oraculo"
+          src="oraculo-default-2.png"
+          alt="Choripán Oráculo"
+          class="choripan"
+        />
+      </div>
+
+      <div id="respuesta" class="respuesta"></div>
+
+      <div class="acciones">
+        <button onclick="exportarTweet()">📤 Tweetear</button>
+        <button onclick="descargarStory()">📸 Descargar Story</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
